@@ -14,6 +14,7 @@ struct EmojieMemoryGameView: View {
         ZStack(alignment: .bottom) {
             VStack {
                 gameBody
+                Spacer()
                 HStack {
                     restart
                     Spacer()
