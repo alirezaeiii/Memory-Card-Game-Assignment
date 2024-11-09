@@ -43,7 +43,7 @@ struct EmojieMemoryGameView: View {
         if let index = viewModel.cards.index(matching: card) {
             delay = Double(index) * (CardConstants.totalDealDuration / Double(viewModel.cards.count))
         }
-        return Animation.easeInOut(duration: 1).delay(delay)
+        return Animation.easeInOut(duration: CardConstants.dealDuration).delay(delay)
     }
     
     private func zIndex(of card: EmojieMemoryGame.Card) -> Double {
@@ -58,7 +58,7 @@ struct EmojieMemoryGameView: View {
                 CardView(card)
                     .matchedGeometryEffect(id: card.id, in: dealingNamespace)
                     .padding(4)
-                    .transition(AnyTransition.asymmetric(insertion: .identity, removal: .scale).animation(.easeInOut(duration: 3)))
+                    .transition(AnyTransition.asymmetric(insertion: .identity, removal: .scale).animation(.easeInOut(duration: CardConstants.removalDuration)))
                     .zIndex(zIndex(of: card))
                     .onTapGesture {
                         withAnimation {
@@ -110,6 +110,7 @@ struct EmojieMemoryGameView: View {
         static let aspectRatio: CGFloat = 2/3
         static let dealDuration: Double = 0.5
         static let totalDealDuration: Double = 2
+        static let removalDuration: Double = 1
         static let undealHeight: CGFloat = 90
         static let undealWidth = undealHeight * aspectRatio
     }
