@@ -1,6 +1,6 @@
 //
 //  CardGame.swift
-//  Standford assigment
+//  Standford assignment
 //
 //  Created by Ali on 11/4/24.
 //

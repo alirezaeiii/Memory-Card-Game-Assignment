@@ -1,6 +1,6 @@
 //
 //  EmojieMemoryGameView.swift
-//  Standford ass2
+//  Standford assignment
 //
 //  Created by Ali on 11/4/24.
 //

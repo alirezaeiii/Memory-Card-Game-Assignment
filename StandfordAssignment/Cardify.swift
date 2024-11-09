@@ -1,6 +1,6 @@
 //
 //  Cardify.swift
-//  Standford ass2
+//  Standford assignment
 //
 //  Created by Ali on 11/8/24.
 //
@@ -30,7 +30,7 @@ struct Cardify: AnimatableModifier {
                 shape.fill()
             }
             content.opacity(rotation < 90 ? 1 : 0)
-        }.rotation3DEffect(Angle.degrees(rotation),axis: /*@START_MENU_TOKEN@*/(x: 0.0, y: 1.0, z: 0.0)/*@END_MENU_TOKEN@*/)
+        }.rotation3DEffect(Angle.degrees(rotation),axis: (x: 0, y: 1, z: 0))
     }
     
     private struct DrawingConstants {

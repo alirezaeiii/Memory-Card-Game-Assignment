@@ -1,6 +1,6 @@
 //
 //  AspectVGrid.swift
-//  Standford ass2
+//  Standford assignment
 //
 //  Created by Ali on 11/8/24.
 //
